@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+service StreamsService {
+  rpc send(StreamsRequest) returns (StreamsResponse);
+}
+message StreamsRequest {
+  string contents = 1;
+}
+message StreamsResponse {
+  string contents = 1;
+}
+
